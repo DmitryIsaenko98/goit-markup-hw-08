@@ -486,22 +486,18 @@ body {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 360px;
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-section__title {
-    font-size: 44px;
-    line-height: 1.4;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .hero-section__title {
     max-width: 696px;
+    font-size: 44px;
+    line-height: 1.4;
   }
 }
 
@@ -540,12 +536,6 @@ body {
 .features-section {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .features-section {
-    padding-top: 94px;
-  }
 }
 
 .features-section__list {
@@ -615,6 +605,12 @@ body {
   line-height: 1.1;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-section__title {
+    text-align: start;
+  }
 }
 
 .features-section__text {
@@ -709,7 +705,7 @@ body {
 .team-section {
   background-color: #f5f4fa;
   padding-top: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 .team-section__title {
@@ -766,7 +762,6 @@ body {
 .team-card {
   background-color: #ffffff;
   max-width: 450px;
-  width: 100%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border: transparent;
@@ -782,6 +777,7 @@ body {
 @media screen and (min-width: 768px) {
   .team-card {
     max-width: 354px;
+    width: calc((100%-30px) / 2);
   }
 }
 
@@ -880,6 +876,8 @@ body {
 .clients-section {
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -935,6 +933,12 @@ body {
   list-style: none;
   width: 210px;
   height: 92px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc((100%-30px) / 2);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1180,6 +1184,14 @@ body {
 @media screen and (min-width: 768px) {
   .social-media__container {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-media__container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

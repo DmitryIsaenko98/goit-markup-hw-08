@@ -1,6 +1,8 @@
 .clients-section {
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   @media screen and(min-width:1200px) {
     padding-top: 94px;
@@ -42,6 +44,9 @@
     list-style: none;
     width: 210px;
     height: 92px;
+    @media screen and(min-width:768px) {
+      width: calc((100%-30px) / 2);
+    }
 
     @media screen and(min-width:1200px) {
       width: 170px;

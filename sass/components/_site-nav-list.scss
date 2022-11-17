@@ -1,33 +1,26 @@
 .site-nav-list {
-  // display: flex;
   display: none;
   list-style: none;
 
   @media screen and(min-width:480px) {
-  
   }
 
   @media screen and(min-width:768px) {
     display: flex;
+    align-items: center;
   }
 
   @media screen and(min-width:1200px) {
-    display: flex;
   }
 
   &__item:not(:last-child) {
-    // margin-right: 50px;
-
     @media screen and(min-width:768px) {
       margin-right: 50px;
     }
   }
 
-
   &__link {
     display: block;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
 
     color: $title-text-color;
     font-weight: 500;
@@ -37,19 +30,17 @@
     text-decoration: none;
     transition: color 250ms $timing-function;
 
-
-  @media screen and(min-width:1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @media screen and(min-width:768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
-
-  }
-
 
   &__link:hover,
   &__link:focus {
     color: $accent-color;
   }
+
   &__link--current-page {
     color: $accent-color;
   }
@@ -58,6 +49,7 @@
 .current-page {
   position: relative;
   color: $accent-color;
+
   &::after {
     content: "";
     display: block;

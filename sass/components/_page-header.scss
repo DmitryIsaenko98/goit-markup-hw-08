@@ -9,6 +9,11 @@
   &__site-nav {
     display: flex;
     align-items: center;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 
   &__logo {
@@ -23,29 +28,21 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration-line: none;
-
-    // @media screen and(min-width:480px) {
-    //   padding-top: 16px;
-    //   padding-bottom: 16px;
-    // }
-
-    // @media screen and(min-width:768px) {
-    //   padding-top: 26px;
-    //   padding-bottom: 26px;
-    // }
-
-    // @media screen and(min-width:1200px) {
-    //  padding-top: 24px;
-    // padding-bottom: 25px;
-    // }
-
-
   }
 
+  &__mobile-menu {
+    border: none;
+    background-color: inherit;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 
   &__logo--black {
     color: #2f303a;
   }
+
   &__logo:hover,
   &__logo:focus,
   &__logo:active {

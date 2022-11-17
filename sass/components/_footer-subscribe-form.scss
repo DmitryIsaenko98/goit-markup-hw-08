@@ -1,38 +1,30 @@
 .subscribe-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  // width: 570px;
+  // height: 86px;
+  // margin-left: auto;
 
-  @media screen and(min-width:768px) {
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   @media screen and(min-width:1200px) {
     width: 570px;
     height: 86px;
+    margin-left: auto;
+   }
 
-    margin-top: 0;
-    margin-right: 0;
-    align-items: baseline;
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  
+ &__container {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     margin-top: 20px;
 
     @media screen and(min-width:1200px) {
-      flex-direction: row;
-      align-items: baseline;
-    }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
   }
 
-  &__label {
+ &__label {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -41,9 +33,9 @@
     color: $other-title-text-color;
   }
 
-  &__input {
+ &__input {
     padding: 15px 16px 16px 15px;
-    width: 450px;
+    // width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -51,19 +43,10 @@
     transition: border-color 250ms $timing-function;
     color: $primary-text-color;
     outline: none;
-    margin-bottom: 20px;
-
-    @media screen and(max-width:479px) {
-      max-width: 290px;
-    }
-
-    @media screen and(min-width:780px) {
-      width: 450px;
-    }
 
     @media screen and(min-width:1200px) {
       width: 358px;
-    }
+     }
   }
 
   &__input:hover,
@@ -73,11 +56,11 @@
 
   &__icon {
     fill: #fff;
-    margin-left: 8px;
+    // margin-left: 10px;
 
     @media screen and(min-width:1200px) {
       margin-left: 10px;
-    }
+     }
   }
 
   &__button {
@@ -91,6 +74,7 @@
     cursor: pointer;
     min-width: 200px;
     height: 50px;
+    margin: 0 auto;
     margin-right: 0;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -101,10 +85,7 @@
     justify-content: center;
     transition: box-shadow 250ms $timing-function,
       background-color 250ms $timing-function;
-
-    @media screen and(min-width:1199px) {
-      margin-left: 12px;
-    }
+    margin-left: 12px;
   }
 
   &__button:hover,

@@ -152,7 +152,7 @@ body {
           transform: translateX(0);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
@@ -874,8 +874,6 @@ body {
 .clients-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1624,7 +1622,7 @@ body {
           transform: translateX(0);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .mobile-menu {
     display: none;
   }

@@ -43,7 +43,7 @@
 .team-card {
   background-color: $primary-background-color;
   // max-width: 270px;
-  max-width: 450px;
+  // max-width: 450px;
 
   box-shadow: $portfolio-hover-shadow;
   border: transparent;
@@ -54,12 +54,12 @@
   }
 
   @media screen and(min-width:768px) {
-    max-width: 354px;
+    // width: 354px;
     width: calc((100%-30px) / 2);
   }
-  @media screen and(min-width:768px) {
-    max-width: 270px;
-  }
+  // @media screen and(min-width:768px) {
+  //   width: 270px;
+  // }
 
   &:not(:last-child) {
     @media screen and(max-width:767px) {

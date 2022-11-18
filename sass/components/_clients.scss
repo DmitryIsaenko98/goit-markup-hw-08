@@ -24,6 +24,7 @@
 
     @media screen and(min-width:1200px) {
       margin-bottom: 50px;
+      width: 100%;
     }
   }
 }
@@ -32,9 +33,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100%-15px) / 2);
+  width: 100%;
 
   @media screen and(min-width:768px) {
+    justify-content: center;
+  }
+
+  @media screen and(max-width:479px) {
     justify-content: center;
   }
 
@@ -44,12 +49,11 @@
     height: 92px;
 
     @media screen and(min-width:768px) {
-      flex-basis: calc((100%-30px) / 2);
+      max-width: 226px;
     }
 
     @media screen and(min-width:1200px) {
-      width: 170px;
-      height: 92px;
+      max-width: 170px;
     }
   }
 

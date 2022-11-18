@@ -9,12 +9,14 @@
 
   &__list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
     @media screen and(min-width:768px) {
-      display: flex;
-
+      flex-direction: row;
       flex-wrap: wrap;
-      gap: 30px;
+      // gap: 30px;
     }
 
     @media screen and(min-width:1200px) {
@@ -69,6 +71,6 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 }

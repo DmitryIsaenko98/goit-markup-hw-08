@@ -10,6 +10,10 @@
   background-color: $primary-background-color;
   z-index: 1;
 
+  &__nav {
+    margin-bottom: 250px;
+  }
+
   &.is-open {
     transform: translateX(0);
   }

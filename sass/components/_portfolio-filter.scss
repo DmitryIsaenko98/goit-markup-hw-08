@@ -1,16 +1,23 @@
 .filter-list {
   display: flex;
-  // margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  // justify-content: center;
   list-style: none;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
 
   @media screen and(min-width:1200px) {
     margin-bottom: 50px;
-   }
-
-&__item:not(:last-child) {
-    margin-right: 8px;
   }
+
+  // &__item:not(:last-child) {
+  //   margin-right: 8px;
+  // }
 
   &__button {
     background-color: $filter-list-button-bg-color;

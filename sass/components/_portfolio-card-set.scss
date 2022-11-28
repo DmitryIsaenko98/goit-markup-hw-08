@@ -1,27 +1,46 @@
 .portfolio-section {
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    // flex-wrap: wrap;
     gap: 30px;
     text-decoration: none;
     list-style: none;
+
+    @media screen and(min-width:768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__card {
     display: block;
     background-color: $primary-background-color;
-    // width: 370px;
     cursor: pointer;
+
+    @media screen and(max-width:767px) {
+      max-width: 450px;
+    }
+
+    @media screen and(min-width:768px) {
+      width: 354px;
+    }
 
     @media screen and(min-width:1200px) {
       width: 370px;
-     }
+    }
   }
 
   &__link {
     text-decoration: none;
     display: block;
     transition: box-shadow 250ms $timing-function;
+
+    @media screen and(min-width:768px) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
   }
 
   &__link:hover,
@@ -39,7 +58,7 @@
     @media screen and(min-width:1200px) {
       width: 370px;
       height: 294px;
-     }
+    }
   }
 
   &__overlay {
@@ -69,6 +88,10 @@
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    @media screen and(min-width:768px) {
+      flex-grow: 1;
+    }
   }
 
   &__footer-title {
